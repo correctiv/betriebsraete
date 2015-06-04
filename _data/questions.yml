@@ -1,0 +1,378 @@
+de:
+  q_1:
+    description: 'Das Aktenzeichen findet sich auf Prozesseinladungen und Urteilen, oder auf Schreiben von Staatsanwaltschaften oder Polizei. Es sieht z.B. so aus: Az. 2 AZR 541/09'
+    label: Welches Aktenzeichen hatte das Verfahren?
+  q_10:
+    description: ''
+    label: Wo waren Sie bzw. die Betroffenen beschäftigt?
+  q_11:
+    description: ''
+    label: 'Die Postleitzahl (PLZ):'
+  q_12:
+    description: ''
+    label: Wie heißt das Unternehmen?
+  q_13:
+    description: ''
+    label: Welche Abteilung?
+  q_14:
+    description: ''
+    label: Wie viele Stimmberechtigte für die Betriebsratswahl gab es?
+  q_15:
+    choice_other: false
+    choices:
+    - label: Baugewerbe
+      value: Baugewerbe
+    - label: Bergbau und Bodenschätze
+      value: Bergbau und Bodenschätze
+    - label: Chemie / Pharma
+      value: Chemie / Pharma
+    - label: Computer/IT/Telekommunikation
+      value: Computer/IT/Telekommunikation
+    - label: Dienstleistung ( Security / Call-Center  etc.)
+      value: Dienstleistung ( Security / Call-Center  etc.)
+    - label: Druckerei / Verlage
+      value: Druckerei / Verlage
+    - label: Einzelhandel  / Großhandel / Versand
+      value: Einzelhandel  / Großhandel / Versand
+    - label: Erziehung / Bildung / Wissenschaft
+      value: Erziehung / Bildung / Wissenschaft
+    - label: Energie
+      value: Energie
+    - label: Finanzen/Banken
+      value: Finanzen/Banken
+    - label: Gastronomie / Hotel / Vergnügungsparks
+      value: Gastronomie / Hotel / Vergnügungsparks
+    - label: Gesundheit / Pflege
+      value: Gesundheit / Pflege
+    - label: Haushaltsarbeiten
+      value: Haushaltsarbeiten
+    - label: Kommunikation (PR/Journalismus/Beratung etc.)
+      value: Kommunikation (PR/Journalismus/Beratung etc.)
+    - label: Land- und Forstwirtschaft / Fischerei
+      value: Land- und Forstwirtschaft / Fischerei
+    - label: Leder
+      value: Leder
+    - label: Metall und Maschinenbau
+      value: Metall und Maschinenbau
+    - label: Möbel
+      value: Möbel
+    - label: Nahrungsmittel
+      value: Nahrungsmittel
+    - label: Öffentlicher Dienst
+      value: Öffentlicher Dienst
+    - label: Reinigung / Hygiene / Raumpflege
+      value: Reinigung / Hygiene / Raumpflege
+    - label: Sex / Prostitution / Escort
+      value: Sex / Prostitution / Escort
+    - label: Textil und Bekleidung
+      value: Textil und Bekleidung
+    - label: Transport/Verkehr
+      value: Transport/Verkehr
+    - label: Sonstige
+      value: Sonstige
+    description: ''
+    label: Branche
+  q_16:
+    description: In welchem Medium? Wie hieß der Bericht? Wer war Autor/Autorin? Wann ist der Bericht erschienen?
+    label: Ist über den Konflikt berichtet worden?
+  q_17:
+    description: ''
+    label: Wie hieß der Anwalt / die Anwältin des Arbeitgebers?
+  q_18:
+    description: ''
+    label: Welcher Kanzlei gehörte der Anwalt / die Anwältin an?
+  q_19:
+    description: ''
+    label: Anwalt / Anwältin der Betriebsratsmehrheit?
+  q_2:
+    description: ''
+    label: Bei welchem Gericht oder welcher Staatsanwaltschaft wurde das Verfahren geführt?
+  q_20:
+    description: ''
+    label: Anwalt / Anwältin auf Seiten der Betroffenen?
+  q_21:
+    description: ''
+    label: Wann begann der Konflikt (Datum)?
+  q_22:
+    choice_other: false
+    choices:
+    - label: Nein
+      value: Nein
+    - label: Ja
+      value: Ja
+    description: ''
+    label: Ist der Konflikt beendet?
+  q_23:
+    description: ''
+    label: 'Falls ja: wann wurde er beendet (Datum)?'
+  q_24:
+    choice_other: true
+    choices:
+    - label: Arbeitgeber konnte die Mehrheit im Betriebsrat erringen.
+      value: Arbeitgeber konnte die Mehrheit im Betriebsrat erringen.
+    - label: Betroffene konnten Betriebsratsmehrheit erringen bzw. verteidigen
+      value: Betroffene konnten Betriebsratsmehrheit erringen bzw. verteidigen
+    - label: Betroffene sind im Unternehmen geblieben
+      value: Betroffene sind im Unternehmen geblieben
+    - label: Betroffene haben das Unternehmen verlassen
+      value: Betroffene haben das Unternehmen verlassen
+    - label: Unternehmen wurde aufgelöst
+      value: Unternehmen wurde aufgelöst
+    - label: Betroffener Unternehmensteil wurde aufgelöst bzw. ausgelagert
+      value: Betroffener Unternehmensteil wurde aufgelöst bzw. ausgelagert
+    - label: __other_option__
+      value: __other_option__
+    description: ''
+    label: 'Falls ja: wie endete der Konflikt?'
+  q_25:
+    description: ''
+    label: Ansprechpartner Kontakt für Nachfragen
+  q_26:
+    description: ''
+    label: Vorname
+  q_27:
+    description: ''
+    label: Nachname
+  q_28:
+    description: ''
+    label: E-Mail
+  q_29:
+    description: ''
+    label: Telefon
+  q_3:
+    description: ''
+    label: Bitte geben Sie den Ort an, an dem das Verfahren geführt wurde
+  q_30:
+    description: ''
+    label: Wie würden Sie den Konflikt beschreiben? Möchten Sie uns sonst noch etwas mitteilen?
+  q_4:
+    choice_other: true
+    choices:
+    - label: Arbeitsgericht
+      value: Arbeitsgericht
+    - label: Landesarbeitsgericht
+      value: Landesarbeitsgericht
+    - label: __other_option__
+      value: __other_option__
+    description: ''
+    label: 'Bitte geben Sie den Namen der Institution an:'
+  q_5:
+    description: ''
+    label: Wann wurde die Anzeige gestellt?
+  q_6:
+    choice_other: false
+    choices:
+    - label: Abmahnung / Welle von Abmahnungen
+      value: Abmahnung / Welle von Abmahnungen
+    - label: Gehaltskürzung / Bonikürzung
+      value: Gehaltskürzung / Bonikürzung
+    - label: Versetzung
+      value: Versetzung
+    - label: Schikane
+      value: Schikane
+    - label: Mobbing
+      value: Mobbing
+    - label: Verleumdung
+      value: Verleumdung
+    - label: Konstruierte Vorwürfe
+      value: Konstruierte Vorwürfe
+    - label: Bespitzelung am Arbeitsplatz
+      value: Bespitzelung am Arbeitsplatz
+    - label: Bespitzelung im Privaten
+      value: Bespitzelung im Privaten
+    - label: Isolation von den Kolleginnen und Kollegen
+      value: Isolation von den Kolleginnen und Kollegen
+    - label: Kreuzverhör durch Vorgesetzte
+      value: Kreuzverhör durch Vorgesetzte
+    - label: Kündigung
+      value: Kündigung
+    - label: Welle von Kündigungen
+      value: Welle von Kündigungen
+    description: ''
+    label: 'Maßnahmen gegen einzelne Beschäftigte:'
+  q_7:
+    choice_other: false
+    choices:
+    - label: Verweigerung der Kostenübernahme von Schulungen
+      value: Verweigerung der Kostenübernahme von Schulungen
+    - label: Verweigerung eines Betriebsrats-Büros
+      value: Verweigerung eines Betriebsrats-Büros
+    - label: Verweigerung von Arbeitsmaterialien
+      value: Verweigerung von Arbeitsmaterialien
+    - label: Arbeitgeber streut gezielt Falschinformation über den Betriebsrat (z.B. über verursachte Kosten)
+      value: Arbeitgeber streut gezielt Falschinformation über den Betriebsrat (z.B. über verursachte Kosten)
+    - label: Betriebsratsmitglieder zum Rücktritt gedrängt
+      value: Betriebsratsmitglieder zum Rücktritt gedrängt
+    - label: Führungspersonal als Betriebsrat installiert
+      value: Führungspersonal als Betriebsrat installiert
+    - label: Betriebsratsmitglieder durch Beförderung entfernt
+      value: Betriebsratsmitglieder durch Beförderung entfernt
+    - label: Betriebsratsmitglieder bedroht
+      value: Betriebsratsmitglieder bedroht
+    - label: Betriebsratsmitglieder mit Vergünstigungen, Privilegien bestochen
+      value: Betriebsratsmitglieder mit Vergünstigungen, Privilegien bestochen
+    - label: Unternehmergesteuerte Wahlliste(n) gegründet
+      value: Unternehmergesteuerte Wahlliste(n) gegründet
+    - label: Unternehmergesteuerte Belegschaftsinitiative gegründet
+      value: Unternehmergesteuerte Belegschaftsinitiative gegründet
+    - label: Beantragung der Auflösung des Betriebsrats beim Arbeitsgericht
+      value: Beantragung der Auflösung des Betriebsrats beim Arbeitsgericht
+    - label: Gezielte Umstrukturierung /Aufspaltung des Unternehmens
+      value: Gezielte Umstrukturierung /Aufspaltung des Unternehmens
+    - label: Verlagerung, Ausgründung, Schließung des betreffenden Betriebes
+      value: Verlagerung, Ausgründung, Schließung des betreffenden Betriebes
+    - label: Sonstige
+      value: Sonstige
+    description: ''
+    label: Maßnahmen gegen einen bestehenden Betriebsrat
+  q_8:
+    choice_other: false
+    choices:
+    - label: Einschüchterung von Kandidaten für den Betriebsrat
+      value: Einschüchterung von Kandidaten für den Betriebsrat
+    - label: Herausgabe von Wahllisten verzögert
+      value: Herausgabe von Wahllisten verzögert
+    - label: Kündigung von Kandidaten für den Betriebsrat
+      value: Kündigung von Kandidaten für den Betriebsrat
+    - label: „Herauskaufen“ von Kandidaten
+      value: „Herauskaufen“ von Kandidaten
+    description: ''
+    label: Kündigung von Mitgliedern des Wahlvorstandes
+  q_9:
+    choice_other: false
+    choices:
+    - label: Maßnahmen gegen die Wahl eines Betriebsrates
+      value: Maßnahmen gegen die Wahl eines Betriebsrates
+    - label: Einschüchterung von Kandidaten für den Wahlvorstand
+      value: Einschüchterung von Kandidaten für den Wahlvorstand
+    - label: Verhinderung der Bestellung eines Wahlvorstandes
+      value: Verhinderung der Bestellung eines Wahlvorstandes
+    - label: Gezielte Reorganisation/Aufspaltung des Unternehmens
+      value: Gezielte Reorganisation/Aufspaltung des Unternehmens
+    - label: Verlagerung, Ausgründung, Schließung des betreffenden Betriebes
+      value: Verlagerung, Ausgründung, Schließung des betreffenden Betriebes
+    - label: Sonstige
+      value: Sonstige
+    description: ''
+    label: Weitere Maßnahmen
+meta:
+  q_1:
+    label: Welches Aktenzeichen hatte das Verfahren?
+    name: entry.322259065
+    required: true
+  q_10:
+    label: Wo waren Sie bzw. die Betroffenen beschäftigt?
+    name: entry.2092711755
+    required: false
+  q_11:
+    label: 'Die Postleitzahl (PLZ):'
+    name: entry.297497162
+    required: false
+  q_12:
+    label: Wie heißt das Unternehmen?
+    name: entry.1614673839
+    required: false
+  q_13:
+    label: Welche Abteilung?
+    name: entry.1404211264
+    required: false
+  q_14:
+    label: Wie viele Stimmberechtigte für die Betriebsratswahl gab es?
+    name: entry.2093295049
+    required: false
+  q_15:
+    label: Branche
+    name: entry.502668022
+    required: false
+  q_16:
+    label: Ist über den Konflikt berichtet worden?
+    name: entry.794954603
+    required: false
+  q_17:
+    label: Wie hieß der Anwalt / die Anwältin des Arbeitgebers?
+    name: entry.314510267
+    required: false
+  q_18:
+    label: Welcher Kanzlei gehörte der Anwalt / die Anwältin an?
+    name: entry.2141464474
+    required: false
+  q_19:
+    label: Anwalt / Anwältin der Betriebsratsmehrheit?
+    name: entry.1784221634
+    required: false
+  q_2:
+    label: Bei welchem Gericht oder welcher Staatsanwaltschaft wurde das Verfahren geführt?
+    name: entry.1635081200
+    required: true
+  q_20:
+    label: Anwalt / Anwältin auf Seiten der Betroffenen?
+    name: entry.1113516425
+    required: false
+  q_21:
+    label: Wann begann der Konflikt (Datum)?
+    name: entry.104519050
+    required: false
+  q_22:
+    label: Ist der Konflikt beendet?
+    name: entry.738955651
+    required: false
+  q_23:
+    label: 'Falls ja: wann wurde er beendet (Datum)?'
+    name: entry.153818762
+    required: false
+  q_24:
+    label: 'Falls ja: wie endete der Konflikt?'
+    name: entry.1189999700
+    required: false
+  q_25:
+    label: Ansprechpartner Kontakt für Nachfragen
+    name: entry.2039145815
+    required: false
+  q_26:
+    label: Vorname
+    name: entry.567057063
+    required: true
+  q_27:
+    label: Nachname
+    name: entry.636713186
+    required: true
+  q_28:
+    label: E-Mail
+    name: entry.1125803422
+    required: true
+  q_29:
+    label: Telefon
+    name: entry.1894709196
+    required: false
+  q_3:
+    label: Bitte geben Sie den Ort an, an dem das Verfahren geführt wurde
+    name: entry.421023278
+    required: true
+  q_30:
+    label: Wie würden Sie den Konflikt beschreiben? Möchten Sie uns sonst noch etwas mitteilen?
+    name: entry.326355253
+    required: false
+  q_4:
+    label: 'Bitte geben Sie den Namen der Institution an:'
+    name: entry.1083471673
+    required: false
+  q_5:
+    label: Wann wurde die Anzeige gestellt?
+    name: entry.1632399286
+    required: false
+  q_6:
+    label: 'Maßnahmen gegen einzelne Beschäftigte:'
+    name: entry.1739180353
+    required: false
+  q_7:
+    label: Maßnahmen gegen einen bestehenden Betriebsrat
+    name: entry.1374353156
+    required: false
+  q_8:
+    label: Kündigung von Mitgliedern des Wahlvorstandes
+    name: entry.1176904431
+    required: false
+  q_9:
+    label: Weitere Maßnahmen
+    name: entry.1126109454
+    required: false

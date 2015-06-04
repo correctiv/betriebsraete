@@ -1,0 +1,493 @@
+---
+layout: default
+
+---
+
+{{ content }}
+
+{% assign form=site.data.questions.meta %}
+{% assign questions=site.data.questions[page.language] %}
+
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="iframe_txlbrchf" id="iframe_txlbrchf" style="display:none;" onload="if(typeof sent_txlbrchf!='undefined') {window.location='{{ site.domain }}{{ site.baseurl }}/thanks/';}"></iframe>
+
+<form action="https://docs.google.com/forms/d/{{ site.gform_key }}/formResponse" method="post" name="ss-form" target="iframe_txlbrchf" onsubmit="sent_txlbrchf=true">
+
+
+{% assign key="q_1" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_1">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="text" class="form-control" id="q_1" required>
+</div>
+
+{% assign key="q_2" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_2">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="text" class="form-control" id="q_2" required>
+</div>
+
+{% assign key="q_3" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_3">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="text" class="form-control" id="q_3" required>
+</div>
+
+{% assign key="q_4" %}
+{% assign question=questions[key] %}
+
+{% if question.label == "language" %}
+<input name="{{ form[key].name }}" type="hidden" value="{{ page.language }}">
+{% else %}
+<div class="form-group">
+  <label>{{ question.label }}</label>
+  {% if question.description %}
+  <p>{{ question.description }}</p>
+  {% endif %}
+  {% for choice in question.choices %}
+  <div class="radio{% if choice.value == "__other_option__" %} form-inline{% endif %}">
+    <label>
+      <input type="radio" name="{{ form[key].name }}" value="{{ choice.value }}"{% if question.required %} required{% endif %}>
+      {% if choice.value == "__other_option__" %}
+      {{ site.translations[page.language].other }}
+    </label>
+      <input class="form-control input-sm other-input" name="{{ form[key].name }}.other_option_response" value="" dir="auto" aria-label="{{ question.choice_other }}" type="text">
+      {% else %}
+      {{ choice.label }}
+      </label>
+      {% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+
+{% assign key="q_5" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_5">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="text" class="form-control" id="q_5">
+</div>
+
+{% assign key="q_6" %}
+{% assign question=questions[key] %}
+
+<div class="form-group">
+  <label>{{ question.label }}</label>
+  {% if question.description %}
+  <p>{{ question.description }}</p>
+  {% endif %}
+  {% for choice in question.choices %}
+  <div class="checkbox{% if choice.value == "__other_option__" %} form-inline{% endif %}">
+    <label>
+      <input type="checkbox" name="{{ form[key].name }}" value="{{ choice.value }}"{% if question.required %} required{% endif %}>
+      {% if choice.value == "__other_option__" %}
+        {{ site.translations[page.language].other }}
+      </label>
+        <input class="form-control input-sm other-input" name="{{ form[key].name }}.other_option_response" value="" dir="auto" aria-label="{{ question.choice_other }}" type="text">
+      {% else %}
+        {{ choice.label }}
+        </label>
+      {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+
+{% assign key="q_7" %}
+{% assign question=questions[key] %}
+
+<div class="form-group">
+  <label>{{ question.label }}</label>
+  {% if question.description %}
+  <p>{{ question.description }}</p>
+  {% endif %}
+  {% for choice in question.choices %}
+  <div class="checkbox{% if choice.value == "__other_option__" %} form-inline{% endif %}">
+    <label>
+      <input type="checkbox" name="{{ form[key].name }}" value="{{ choice.value }}"{% if question.required %} required{% endif %}>
+      {% if choice.value == "__other_option__" %}
+        {{ site.translations[page.language].other }}
+      </label>
+        <input class="form-control input-sm other-input" name="{{ form[key].name }}.other_option_response" value="" dir="auto" aria-label="{{ question.choice_other }}" type="text">
+      {% else %}
+        {{ choice.label }}
+        </label>
+      {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+
+{% assign key="q_8" %}
+{% assign question=questions[key] %}
+
+<div class="form-group">
+  <label>{{ question.label }}</label>
+  {% if question.description %}
+  <p>{{ question.description }}</p>
+  {% endif %}
+  {% for choice in question.choices %}
+  <div class="checkbox{% if choice.value == "__other_option__" %} form-inline{% endif %}">
+    <label>
+      <input type="checkbox" name="{{ form[key].name }}" value="{{ choice.value }}"{% if question.required %} required{% endif %}>
+      {% if choice.value == "__other_option__" %}
+        {{ site.translations[page.language].other }}
+      </label>
+        <input class="form-control input-sm other-input" name="{{ form[key].name }}.other_option_response" value="" dir="auto" aria-label="{{ question.choice_other }}" type="text">
+      {% else %}
+        {{ choice.label }}
+        </label>
+      {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+
+{% assign key="q_9" %}
+{% assign question=questions[key] %}
+
+<div class="form-group">
+  <label>{{ question.label }}</label>
+  {% if question.description %}
+  <p>{{ question.description }}</p>
+  {% endif %}
+  {% for choice in question.choices %}
+  <div class="checkbox{% if choice.value == "__other_option__" %} form-inline{% endif %}">
+    <label>
+      <input type="checkbox" name="{{ form[key].name }}" value="{{ choice.value }}"{% if question.required %} required{% endif %}>
+      {% if choice.value == "__other_option__" %}
+        {{ site.translations[page.language].other }}
+      </label>
+        <input class="form-control input-sm other-input" name="{{ form[key].name }}.other_option_response" value="" dir="auto" aria-label="{{ question.choice_other }}" type="text">
+      {% else %}
+        {{ choice.label }}
+        </label>
+      {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+
+{% assign key="q_10" %}
+{% assign question=questions[key] %}
+
+<div class="form-group">
+  <label>{{ question.label }}</label>
+  {% if question.description %}
+    <p>{{ question.description }}</p>
+  {% endif %}
+  <textarea class="form-control" rows="3" name="{{ form[key].name }}"{% if question.required %} required{% endif %}></textarea>
+</div>
+
+
+{% assign key="q_11" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_11">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="text" class="form-control" id="q_11">
+</div>
+
+{% assign key="q_12" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_12">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="text" class="form-control" id="q_12">
+</div>
+
+{% assign key="q_13" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_13">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="text" class="form-control" id="q_13">
+</div>
+
+{% assign key="q_14" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_14">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="text" class="form-control" id="q_14">
+</div>
+
+{% assign key="q_15" %}
+{% assign question=questions[key] %}
+
+{% if question.label == "language" %}
+<input name="{{ form[key].name }}" type="hidden" value="{{ page.language }}">
+{% else %}
+<div class="form-group">
+  <label>{{ question.label }}</label>
+  {% if question.description %}
+  <p>{{ question.description }}</p>
+  {% endif %}
+  {% for choice in question.choices %}
+  <div class="radio{% if choice.value == "__other_option__" %} form-inline{% endif %}">
+    <label>
+      <input type="radio" name="{{ form[key].name }}" value="{{ choice.value }}"{% if question.required %} required{% endif %}>
+      {% if choice.value == "__other_option__" %}
+      {{ site.translations[page.language].other }}
+    </label>
+      <input class="form-control input-sm other-input" name="{{ form[key].name }}.other_option_response" value="" dir="auto" aria-label="{{ question.choice_other }}" type="text">
+      {% else %}
+      {{ choice.label }}
+      </label>
+      {% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+
+{% assign key="q_16" %}
+{% assign question=questions[key] %}
+
+<div class="form-group">
+  <label>{{ question.label }}</label>
+  {% if question.description %}
+    <p>{{ question.description }}</p>
+  {% endif %}
+  <textarea class="form-control" rows="3" name="{{ form[key].name }}"{% if question.required %} required{% endif %}></textarea>
+</div>
+
+
+{% assign key="q_17" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_17">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="text" class="form-control" id="q_17">
+</div>
+
+{% assign key="q_18" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_18">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="text" class="form-control" id="q_18">
+</div>
+
+{% assign key="q_19" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_19">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="text" class="form-control" id="q_19">
+</div>
+
+{% assign key="q_20" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_20">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="text" class="form-control" id="q_20">
+</div>
+
+{% assign key="q_21" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_21">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="text" class="form-control" id="q_21">
+</div>
+
+{% assign key="q_22" %}
+{% assign question=questions[key] %}
+
+{% if question.label == "language" %}
+<input name="{{ form[key].name }}" type="hidden" value="{{ page.language }}">
+{% else %}
+<div class="form-group">
+  <label>{{ question.label }}</label>
+  {% if question.description %}
+  <p>{{ question.description }}</p>
+  {% endif %}
+  {% for choice in question.choices %}
+  <div class="radio{% if choice.value == "__other_option__" %} form-inline{% endif %}">
+    <label>
+      <input type="radio" name="{{ form[key].name }}" value="{{ choice.value }}"{% if question.required %} required{% endif %}>
+      {% if choice.value == "__other_option__" %}
+      {{ site.translations[page.language].other }}
+    </label>
+      <input class="form-control input-sm other-input" name="{{ form[key].name }}.other_option_response" value="" dir="auto" aria-label="{{ question.choice_other }}" type="text">
+      {% else %}
+      {{ choice.label }}
+      </label>
+      {% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+
+{% assign key="q_23" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_23">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="text" class="form-control" id="q_23">
+</div>
+
+{% assign key="q_24" %}
+{% assign question=questions[key] %}
+
+<div class="form-group">
+  <label>{{ question.label }}</label>
+  {% if question.description %}
+  <p>{{ question.description }}</p>
+  {% endif %}
+  {% for choice in question.choices %}
+  <div class="checkbox{% if choice.value == "__other_option__" %} form-inline{% endif %}">
+    <label>
+      <input type="checkbox" name="{{ form[key].name }}" value="{{ choice.value }}"{% if question.required %} required{% endif %}>
+      {% if choice.value == "__other_option__" %}
+        {{ site.translations[page.language].other }}
+      </label>
+        <input class="form-control input-sm other-input" name="{{ form[key].name }}.other_option_response" value="" dir="auto" aria-label="{{ question.choice_other }}" type="text">
+      {% else %}
+        {{ choice.label }}
+        </label>
+      {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+
+{% assign key="q_25" %}
+{% assign question=questions[key] %}
+
+<div class="form-group">
+  <label>{{ question.label }}</label>
+  {% if question.description %}
+    <p>{{ question.description }}</p>
+  {% endif %}
+  <textarea class="form-control" rows="3" name="{{ form[key].name }}"{% if question.required %} required{% endif %}></textarea>
+</div>
+
+
+{% assign key="q_26" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_26">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="text" class="form-control" id="q_26" required>
+</div>
+
+{% assign key="q_27" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_27">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="text" class="form-control" id="q_27" required>
+</div>
+
+{% assign key="q_28" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_28">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="email" class="form-control" id="q_28" required>
+</div>
+
+{% assign key="q_29" %}
+{% assign question=questions[key] %}
+<div class="form-group">
+  <label for="q_29">{{ question.label }}</label>
+
+    {% if question.description %}
+      <p>{{ question.description }}</p>
+    {% endif %}
+
+  <input name="{{ form[key].name }}" type="text" class="form-control" id="q_29">
+</div>
+
+{% assign key="q_30" %}
+{% assign question=questions[key] %}
+
+<div class="form-group">
+  <label>{{ question.label }}</label>
+  {% if question.description %}
+    <p>{{ question.description }}</p>
+  {% endif %}
+  <textarea class="form-control" rows="3" name="{{ form[key].name }}"{% if question.required %} required{% endif %}></textarea>
+</div>
+
+<button class="btn btn-success" type="submit">{{ site.translations[page.language].submit }}</button>
+</form>

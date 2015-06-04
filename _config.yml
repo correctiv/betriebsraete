@@ -1,0 +1,17 @@
+baseurl: /betriebsraete/
+domain: ""
+markdown: kramdown
+
+gform_key: 1XUQ3P619C1nnJHQmNGlQ3Se9pMKLfAGoa2VuUuFyAfk
+
+languages:
+  de: "Deutsch"
+
+translations:
+  de:
+    required: Diese Frage muss beantwortet werden
+    required_star: Verpflichtend
+    other: "Andere:"
+    submit: Abschicken
+    projectname: Fragebogen Betriebsräte
+    title: Fragebogen Betriebsräte
