@@ -2,7 +2,7 @@
 layout: base
 
 ---
-
+{% unless page.embed %}
 <div class="navbar navbar-default" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -27,6 +27,7 @@ layout: base
     </div>
   </div>
 </div>
+{% endunless %}
 
 <div class="container">
 
