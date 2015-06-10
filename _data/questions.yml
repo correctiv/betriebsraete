@@ -4,20 +4,17 @@ de:
     label: Welches Aktenzeichen hatte das Verfahren?
   q_10:
     description: ''
-    label: Wo waren Sie bzw. die Betroffenen beschäftigt?
+    label: 'Die Postleitzahl (PLZ):'
   q_11:
     description: ''
-    label: 'Die Postleitzahl (PLZ):'
+    label: Wie heißt das Unternehmen?
   q_12:
     description: ''
-    label: Wie heißt das Unternehmen?
+    label: Welche Abteilung?
   q_13:
     description: ''
-    label: Welche Abteilung?
-  q_14:
-    description: ''
     label: Wie viele Stimmberechtigte für die Betriebsratswahl gab es?
-  q_15:
+  q_14:
     choice_other: false
     choices:
     - label: Baugewerbe
@@ -72,28 +69,25 @@ de:
       value: Sonstige
     description: ''
     label: Branche
-  q_16:
+  q_15:
     description: In welchem Medium? Wie hieß der Bericht? Wer war Autor/Autorin? Wann ist der Bericht erschienen?
     label: Ist über den Konflikt berichtet worden?
-  q_17:
+  q_16:
     description: ''
     label: Wie hieß der Anwalt / die Anwältin des Arbeitgebers?
-  q_18:
+  q_17:
     description: ''
     label: Welcher Kanzlei gehörte der Anwalt / die Anwältin an?
+  q_18:
+    description: ''
+    label: Anwalt / Anwältin auf Seiten der Betroffenen?
   q_19:
     description: ''
-    label: Anwalt / Anwältin der Betriebsratsmehrheit?
+    label: Wann begann der Konflikt (Datum)?
   q_2:
     description: ''
     label: Bei welchem Gericht oder welcher Staatsanwaltschaft wurde das Verfahren geführt?
   q_20:
-    description: ''
-    label: Anwalt / Anwältin auf Seiten der Betroffenen?
-  q_21:
-    description: ''
-    label: Wann begann der Konflikt (Datum)?
-  q_22:
     choice_other: false
     choices:
     - label: Nein
@@ -102,10 +96,10 @@ de:
       value: Ja
     description: ''
     label: Ist der Konflikt beendet?
-  q_23:
+  q_21:
     description: ''
     label: 'Falls ja: wann wurde er beendet (Datum)?'
-  q_24:
+  q_22:
     choice_other: true
     choices:
     - label: Arbeitgeber konnte die Mehrheit im Betriebsrat erringen.
@@ -124,27 +118,27 @@ de:
       value: __other_option__
     description: ''
     label: 'Falls ja: wie endete der Konflikt?'
-  q_25:
+  q_23:
     description: ''
     label: Ansprechpartner Kontakt für Nachfragen
-  q_26:
+  q_24:
     description: ''
     label: Vorname
-  q_27:
+  q_25:
     description: ''
     label: Nachname
-  q_28:
+  q_26:
     description: ''
     label: E-Mail
-  q_29:
+  q_27:
     description: ''
     label: Telefon
+  q_28:
+    description: ''
+    label: Wie würden Sie den Konflikt beschreiben? Möchten Sie uns sonst noch etwas mitteilen?
   q_3:
     description: ''
     label: Bitte geben Sie den Ort an, an dem das Verfahren geführt wurde
-  q_30:
-    description: ''
-    label: Wie würden Sie den Konflikt beschreiben? Möchten Sie uns sonst noch etwas mitteilen?
   q_4:
     choice_other: true
     choices:
@@ -158,7 +152,7 @@ de:
     label: 'Bitte geben Sie den Namen der Institution an:'
   q_5:
     description: ''
-    label: Wann wurde die Anzeige gestellt?
+    label: Wann wurde die Anzeige gestellt bzw. der Fall vor Gericht gebracht?
   q_6:
     choice_other: false
     choices:
@@ -191,7 +185,7 @@ de:
     description: ''
     label: 'Maßnahmen gegen einzelne Beschäftigte:'
   q_7:
-    choice_other: false
+    choice_other: true
     choices:
     - label: Verweigerung der Kostenübernahme von Schulungen
       value: Verweigerung der Kostenübernahme von Schulungen
@@ -221,13 +215,15 @@ de:
       value: Gezielte Umstrukturierung /Aufspaltung des Unternehmens
     - label: Verlagerung, Ausgründung, Schließung des betreffenden Betriebes
       value: Verlagerung, Ausgründung, Schließung des betreffenden Betriebes
-    - label: Sonstige
-      value: Sonstige
+    - label: __other_option__
+      value: __other_option__
     description: ''
     label: Maßnahmen gegen einen bestehenden Betriebsrat
   q_8:
-    choice_other: false
+    choice_other: true
     choices:
+    - label: Kündigung von Mitgliedern des Wahlvorstandes
+      value: Kündigung von Mitgliedern des Wahlvorstandes
     - label: Einschüchterung von Kandidaten für den Betriebsrat
       value: Einschüchterung von Kandidaten für den Betriebsrat
     - label: Herausgabe von Wahllisten verzögert
@@ -236,128 +232,130 @@ de:
       value: Kündigung von Kandidaten für den Betriebsrat
     - label: „Herauskaufen“ von Kandidaten
       value: „Herauskaufen“ von Kandidaten
-    description: ''
-    label: Kündigung von Mitgliedern des Wahlvorstandes
-  q_9:
-    choice_other: false
-    choices:
-    - label: Maßnahmen gegen die Wahl eines Betriebsrates
-      value: Maßnahmen gegen die Wahl eines Betriebsrates
+    - label: Mutmaßliche Wahlfälschung (bzw. Unregelmäßigkeiten bei Stimmabgabe)
+      value: Mutmaßliche Wahlfälschung (bzw. Unregelmäßigkeiten bei Stimmabgabe)
+    - label: Unregelmäßigkeiten geschaffen oder provoziert, um Wahlanfechtung zu begründen
+      value: Unregelmäßigkeiten geschaffen oder provoziert, um Wahlanfechtung zu begründen
     - label: Einschüchterung von Kandidaten für den Wahlvorstand
       value: Einschüchterung von Kandidaten für den Wahlvorstand
+    - label: Gründung einer Anti-Betriebsrats-Initiative
+      value: Gründung einer Anti-Betriebsrats-Initiative
+    - label: Gründung eines alternativen Vertretungsorgans (außerhalb des gesetzlichen Rahmens)
+      value: Gründung eines alternativen Vertretungsorgans (außerhalb des gesetzlichen Rahmens)
     - label: Verhinderung der Bestellung eines Wahlvorstandes
       value: Verhinderung der Bestellung eines Wahlvorstandes
+    - label: Verpflichtende Belegschaftsversammlungen zwecks Stimmungsmache
+      value: Verpflichtende Belegschaftsversammlungen zwecks Stimmungsmache
+    - label: Drohung mit Konsequenzen (Schließung von Werken der Abteilungen / Versetzungen, Streichung von Boni, Vergünstigungen etc.)
+      value: Drohung mit Konsequenzen (Schließung von Werken der Abteilungen / Versetzungen, Streichung von Boni, Vergünstigungen etc.)
+    - label: Private Hausbesuche / Telefonanrufe nach Feierabend
+      value: Private Hausbesuche / Telefonanrufe nach Feierabend
     - label: Gezielte Reorganisation/Aufspaltung des Unternehmens
       value: Gezielte Reorganisation/Aufspaltung des Unternehmens
     - label: Verlagerung, Ausgründung, Schließung des betreffenden Betriebes
       value: Verlagerung, Ausgründung, Schließung des betreffenden Betriebes
-    - label: Sonstige
-      value: Sonstige
+    - label: __other_option__
+      value: __other_option__
     description: ''
-    label: Weitere Maßnahmen
+    label: Maßnahmen gegen die Wahl eines Betriebsrates
+  q_9:
+    description: ''
+    label: Wo waren Sie bzw. die Betroffenen beschäftigt?
 meta:
   q_1:
     label: Welches Aktenzeichen hatte das Verfahren?
     name: entry.322259065
     required: true
   q_10:
-    label: Wo waren Sie bzw. die Betroffenen beschäftigt?
-    name: entry.2092711755
-    required: false
-  q_11:
     label: 'Die Postleitzahl (PLZ):'
     name: entry.297497162
     required: false
-  q_12:
+  q_11:
     label: Wie heißt das Unternehmen?
     name: entry.1614673839
     required: false
-  q_13:
+  q_12:
     label: Welche Abteilung?
     name: entry.1404211264
     required: false
-  q_14:
+  q_13:
     label: Wie viele Stimmberechtigte für die Betriebsratswahl gab es?
     name: entry.2093295049
     required: false
-  q_15:
+  q_14:
     label: Branche
     name: entry.502668022
     required: false
-  q_16:
+  q_15:
     label: Ist über den Konflikt berichtet worden?
     name: entry.794954603
     required: false
-  q_17:
+  q_16:
     label: Wie hieß der Anwalt / die Anwältin des Arbeitgebers?
     name: entry.314510267
     required: false
-  q_18:
+  q_17:
     label: Welcher Kanzlei gehörte der Anwalt / die Anwältin an?
     name: entry.2141464474
     required: false
+  q_18:
+    label: Anwalt / Anwältin auf Seiten der Betroffenen?
+    name: entry.1113516425
+    required: false
   q_19:
-    label: Anwalt / Anwältin der Betriebsratsmehrheit?
-    name: entry.1784221634
+    label: Wann begann der Konflikt (Datum)?
+    name: entry.104519050
     required: false
   q_2:
     label: Bei welchem Gericht oder welcher Staatsanwaltschaft wurde das Verfahren geführt?
     name: entry.1635081200
     required: true
   q_20:
-    label: Anwalt / Anwältin auf Seiten der Betroffenen?
-    name: entry.1113516425
-    required: false
-  q_21:
-    label: Wann begann der Konflikt (Datum)?
-    name: entry.104519050
-    required: false
-  q_22:
     label: Ist der Konflikt beendet?
     name: entry.738955651
     required: false
-  q_23:
+  q_21:
     label: 'Falls ja: wann wurde er beendet (Datum)?'
     name: entry.153818762
     required: false
-  q_24:
+  q_22:
     label: 'Falls ja: wie endete der Konflikt?'
     name: entry.1189999700
     required: false
-  q_25:
+  q_23:
     label: Ansprechpartner Kontakt für Nachfragen
     name: entry.2039145815
     required: false
-  q_26:
+  q_24:
     label: Vorname
     name: entry.567057063
     required: true
-  q_27:
+  q_25:
     label: Nachname
     name: entry.636713186
     required: true
-  q_28:
+  q_26:
     label: E-Mail
     name: entry.1125803422
     required: true
-  q_29:
+  q_27:
     label: Telefon
     name: entry.1894709196
+    required: false
+  q_28:
+    label: Wie würden Sie den Konflikt beschreiben? Möchten Sie uns sonst noch etwas mitteilen?
+    name: entry.326355253
     required: false
   q_3:
     label: Bitte geben Sie den Ort an, an dem das Verfahren geführt wurde
     name: entry.421023278
     required: true
-  q_30:
-    label: Wie würden Sie den Konflikt beschreiben? Möchten Sie uns sonst noch etwas mitteilen?
-    name: entry.326355253
-    required: false
   q_4:
     label: 'Bitte geben Sie den Namen der Institution an:'
     name: entry.1083471673
     required: false
   q_5:
-    label: Wann wurde die Anzeige gestellt?
+    label: Wann wurde die Anzeige gestellt bzw. der Fall vor Gericht gebracht?
     name: entry.1632399286
     required: false
   q_6:
@@ -369,10 +367,10 @@ meta:
     name: entry.1374353156
     required: false
   q_8:
-    label: Kündigung von Mitgliedern des Wahlvorstandes
+    label: Maßnahmen gegen die Wahl eines Betriebsrates
     name: entry.1176904431
     required: false
   q_9:
-    label: Weitere Maßnahmen
-    name: entry.1126109454
+    label: Wo waren Sie bzw. die Betroffenen beschäftigt?
+    name: entry.2092711755
     required: false
