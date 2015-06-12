@@ -23,10 +23,10 @@ de:
       value: Bergbau und Bodenschätze
     - label: Chemie / Pharma
       value: Chemie / Pharma
-    - label: Computer/IT/Telekommunikation
-      value: Computer/IT/Telekommunikation
-    - label: Dienstleistung ( Security / Call-Center  etc.)
-      value: Dienstleistung ( Security / Call-Center  etc.)
+    - label: Computer / IT / Telekommunikation
+      value: Computer / IT / Telekommunikation
+    - label: Dienstleistung (Security / Call-Center etc.)
+      value: Dienstleistung (Security / Call-Center etc.)
     - label: Druckerei / Verlage
       value: Druckerei / Verlage
     - label: Einzelhandel  / Großhandel / Versand
@@ -35,20 +35,20 @@ de:
       value: Erziehung / Bildung / Wissenschaft
     - label: Energie
       value: Energie
-    - label: Finanzen/Banken
-      value: Finanzen/Banken
+    - label: Finanzen / Banken
+      value: Finanzen / Banken
     - label: Gastronomie / Hotel / Vergnügungsparks
       value: Gastronomie / Hotel / Vergnügungsparks
     - label: Gesundheit / Pflege
       value: Gesundheit / Pflege
     - label: Haushaltsarbeiten
       value: Haushaltsarbeiten
-    - label: Kommunikation (PR/Journalismus/Beratung etc.)
-      value: Kommunikation (PR/Journalismus/Beratung etc.)
+    - label: Kommunikation (PR / Journalismus / Beratung etc.)
+      value: Kommunikation (PR / Journalismus / Beratung etc.)
     - label: Land- und Forstwirtschaft / Fischerei
       value: Land- und Forstwirtschaft / Fischerei
-    - label: Leder
-      value: Leder
+    - label: Leder / Keramik / Glas
+      value: Leder / Keramik / Glas
     - label: Metall und Maschinenbau
       value: Metall und Maschinenbau
     - label: Möbel
@@ -63,14 +63,14 @@ de:
       value: Sex / Prostitution / Escort
     - label: Textil und Bekleidung
       value: Textil und Bekleidung
-    - label: Transport/Verkehr
-      value: Transport/Verkehr
+    - label: Transport / Verkehr / Logistik
+      value: Transport / Verkehr / Logistik
     - label: Sonstige
       value: Sonstige
     description: ''
     label: Branche
   q_15:
-    description: In welchem Medium? Wie hieß der Bericht? Wer war Autor/Autorin? Wann ist der Bericht erschienen?
+    description: In welchem Medium? Wie hieß der Bericht? Wer war Autor / Autorin? Wann ist der Bericht erschienen?
     label: Ist über den Konflikt berichtet worden?
   q_16:
     description: ''
@@ -146,6 +146,8 @@ de:
       value: Arbeitsgericht
     - label: Landesarbeitsgericht
       value: Landesarbeitsgericht
+    - label: Staatsanwaltschaft
+      value: Staatsanwaltschaft
     - label: __other_option__
       value: __other_option__
     description: ''
@@ -154,7 +156,7 @@ de:
     description: ''
     label: Wann wurde die Anzeige gestellt bzw. der Fall vor Gericht gebracht?
   q_6:
-    choice_other: false
+    choice_other: true
     choices:
     - label: Abmahnung / Welle von Abmahnungen
       value: Abmahnung / Welle von Abmahnungen
@@ -182,6 +184,8 @@ de:
       value: Kündigung
     - label: Welle von Kündigungen
       value: Welle von Kündigungen
+    - label: __other_option__
+      value: __other_option__
     description: ''
     label: 'Maßnahmen gegen einzelne Beschäftigte:'
   q_7:
@@ -209,10 +213,12 @@ de:
       value: Unternehmergesteuerte Wahlliste(n) gegründet
     - label: Unternehmergesteuerte Belegschaftsinitiative gegründet
       value: Unternehmergesteuerte Belegschaftsinitiative gegründet
+    - label: Unterschriftensammlung gegen den Betriebsrat
+      value: Unterschriftensammlung gegen den Betriebsrat
     - label: Beantragung der Auflösung des Betriebsrats beim Arbeitsgericht
       value: Beantragung der Auflösung des Betriebsrats beim Arbeitsgericht
-    - label: Gezielte Umstrukturierung /Aufspaltung des Unternehmens
-      value: Gezielte Umstrukturierung /Aufspaltung des Unternehmens
+    - label: Gezielte Umstrukturierung / Aufspaltung des Unternehmens
+      value: Gezielte Umstrukturierung / Aufspaltung des Unternehmens
     - label: Verlagerung, Ausgründung, Schließung des betreffenden Betriebes
       value: Verlagerung, Ausgründung, Schließung des betreffenden Betriebes
     - label: __other_option__
@@ -246,12 +252,12 @@ de:
       value: Verhinderung der Bestellung eines Wahlvorstandes
     - label: Verpflichtende Belegschaftsversammlungen zwecks Stimmungsmache
       value: Verpflichtende Belegschaftsversammlungen zwecks Stimmungsmache
-    - label: Drohung mit Konsequenzen (Schließung von Werken der Abteilungen / Versetzungen, Streichung von Boni, Vergünstigungen etc.)
-      value: Drohung mit Konsequenzen (Schließung von Werken der Abteilungen / Versetzungen, Streichung von Boni, Vergünstigungen etc.)
+    - label: Drohung mit Konsequenzen (Schließung von Werken oder Abteilungen / Versetzungen, Streichung von Boni, Vergünstigungen etc.)
+      value: Drohung mit Konsequenzen (Schließung von Werken oder Abteilungen / Versetzungen, Streichung von Boni, Vergünstigungen etc.)
     - label: Private Hausbesuche / Telefonanrufe nach Feierabend
       value: Private Hausbesuche / Telefonanrufe nach Feierabend
-    - label: Gezielte Reorganisation/Aufspaltung des Unternehmens
-      value: Gezielte Reorganisation/Aufspaltung des Unternehmens
+    - label: Gezielte Reorganisation / Aufspaltung des Unternehmens
+      value: Gezielte Reorganisation / Aufspaltung des Unternehmens
     - label: Verlagerung, Ausgründung, Schließung des betreffenden Betriebes
       value: Verlagerung, Ausgründung, Schließung des betreffenden Betriebes
     - label: __other_option__

@@ -15,10 +15,9 @@ layout: default
 
 <form action="https://docs.google.com/forms/d/{{ site.gform_key }}/formResponse" method="post" name="ss-form" target="iframe_txlbrchf" onsubmit="sent_txlbrchf=true">
 
-
   {% assign key="q_1" %}
   {% assign question=questions[key] %}
-  <div class="form-group">
+  <div class="form-group required">
     <label for="q_1">{{ question.label }}</label>
 
       {% if question.description %}
@@ -30,7 +29,7 @@ layout: default
 
   {% assign key="q_2" %}
   {% assign question=questions[key] %}
-  <div class="form-group">
+  <div class="form-group required">
     <label for="q_2">{{ question.label }}</label>
 
       {% if question.description %}
@@ -42,7 +41,7 @@ layout: default
 
   {% assign key="q_3" %}
   {% assign question=questions[key] %}
-  <div class="form-group">
+  <div class="form-group required">
     <label for="q_3">{{ question.label }}</label>
 
       {% if question.description %}
@@ -58,7 +57,7 @@ layout: default
   {% if question.label == "language" %}
   <input name="{{ form[key].name }}" type="hidden" value="{{ page.language }}">
   {% else %}
-  <div class="form-group">
+  <div class="form-group{% if question.required %} required{% endif %}">
     <label>{{ question.label }}</label>
     {% if question.description %}
     <p>{{ question.description }}</p>
@@ -96,7 +95,7 @@ layout: default
   {% assign key="q_6" %}
   {% assign question=questions[key] %}
 
-  <div class="form-group">
+  <div class="form-group{% if question.required %} required{% endif %}">
     <label>{{ question.label }}</label>
     {% if question.description %}
     <p>{{ question.description }}</p>
@@ -121,7 +120,7 @@ layout: default
   {% assign key="q_7" %}
   {% assign question=questions[key] %}
 
-  <div class="form-group">
+  <div class="form-group{% if question.required %} required{% endif %}">
     <label>{{ question.label }}</label>
     {% if question.description %}
     <p>{{ question.description }}</p>
@@ -146,7 +145,7 @@ layout: default
   {% assign key="q_8" %}
   {% assign question=questions[key] %}
 
-  <div class="form-group">
+  <div class="form-group{% if question.required %} required{% endif %}">
     <label>{{ question.label }}</label>
     {% if question.description %}
     <p>{{ question.description }}</p>
@@ -171,7 +170,7 @@ layout: default
   {% assign key="q_9" %}
   {% assign question=questions[key] %}
 
-  <div class="form-group">
+  <div class="form-group{% if question.required %} required{% endif %}">
     <label>{{ question.label }}</label>
     {% if question.description %}
       <p>{{ question.description }}</p>
@@ -234,7 +233,7 @@ layout: default
   {% if question.label == "language" %}
   <input name="{{ form[key].name }}" type="hidden" value="{{ page.language }}">
   {% else %}
-  <div class="form-group">
+  <div class="form-group{% if question.required %} required{% endif %}">
     <label>{{ question.label }}</label>
     {% if question.description %}
     <p>{{ question.description }}</p>
@@ -260,7 +259,7 @@ layout: default
   {% assign key="q_15" %}
   {% assign question=questions[key] %}
 
-  <div class="form-group">
+  <div class="form-group{% if question.required %} required{% endif %}">
     <label>{{ question.label }}</label>
     {% if question.description %}
       <p>{{ question.description }}</p>
@@ -323,7 +322,7 @@ layout: default
   {% if question.label == "language" %}
   <input name="{{ form[key].name }}" type="hidden" value="{{ page.language }}">
   {% else %}
-  <div class="form-group">
+  <div class="form-group{% if question.required %} required{% endif %}">
     <label>{{ question.label }}</label>
     {% if question.description %}
     <p>{{ question.description }}</p>
@@ -361,7 +360,7 @@ layout: default
   {% assign key="q_22" %}
   {% assign question=questions[key] %}
 
-  <div class="form-group">
+  <div class="form-group{% if question.required %} required{% endif %}">
     <label>{{ question.label }}</label>
     {% if question.description %}
     <p>{{ question.description }}</p>
@@ -386,7 +385,7 @@ layout: default
   {% assign key="q_23" %}
   {% assign question=questions[key] %}
 
-  <div class="form-group">
+  <div class="form-group{% if question.required %} required{% endif %}">
     <label>{{ question.label }}</label>
     {% if question.description %}
       <p>{{ question.description }}</p>
@@ -397,7 +396,7 @@ layout: default
 
   {% assign key="q_24" %}
   {% assign question=questions[key] %}
-  <div class="form-group">
+  <div class="form-group required">
     <label for="q_24">{{ question.label }}</label>
 
       {% if question.description %}
@@ -409,7 +408,7 @@ layout: default
 
   {% assign key="q_25" %}
   {% assign question=questions[key] %}
-  <div class="form-group">
+  <div class="form-group required">
     <label for="q_25">{{ question.label }}</label>
 
       {% if question.description %}
@@ -421,7 +420,7 @@ layout: default
 
   {% assign key="q_26" %}
   {% assign question=questions[key] %}
-  <div class="form-group">
+  <div class="form-group required">
     <label for="q_26">{{ question.label }}</label>
 
       {% if question.description %}
@@ -446,7 +445,7 @@ layout: default
   {% assign key="q_28" %}
   {% assign question=questions[key] %}
 
-  <div class="form-group">
+  <div class="form-group{% if question.required %} required{% endif %}">
     <label>{{ question.label }}</label>
     {% if question.description %}
       <p>{{ question.description }}</p>
@@ -457,4 +456,4 @@ layout: default
 
 
   <button class="btn btn-success" type="submit">{{ site.translations[page.language].submit }}</button>
-  </form>
+</form>
